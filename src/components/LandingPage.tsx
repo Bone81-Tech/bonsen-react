@@ -93,7 +93,7 @@ const LandingPage: React.FC = () => {
 
         {/* Security Section */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-gray-800 text-center">Sorotan Keamanan (Rekomendasi)</h2>
+          <h2 className="text-3xl font-bold text-gray-800 text-center">Keamanan</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {securityHighlights.map((sec, index) => (
               <div key={index} className="bg-purple-50 p-6 rounded-lg shadow-md text-center">

@@ -8,6 +8,10 @@ import EmployeeStats from '@/components/EmployeeStats';
 import AttendanceClock from '@/components/AttendanceClock';
 import CameraCapture from '@/components/CameraCapture';
 import { useUser } from '@/context/UserContext';
+import AttendanceHistory from '@/components/AttendanceHistory';
+import OvertimeSummary from '@/components/OvertimeSummary';
+import PayslipSummary from '@/components/PayslipSummary';
+import LeaveRequestForm from '@/components/LeaveRequestForm';
 
 export default function DashboardPage() {
   const { user } = useUser();
@@ -42,7 +46,7 @@ export default function DashboardPage() {
           <EmployeeStats />
         </div>
       ) : (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <AttendanceClock 
             onClockIn={() => console.log('Clock in')}
             onClockOut={() => console.log('Clock out')}
@@ -50,6 +54,10 @@ export default function DashboardPage() {
             clockInTime={null}
           />
           <CameraCapture onCapture={(image) => console.log('Captured:', image)} />
+          <AttendanceHistory />
+          <OvertimeSummary />
+          <PayslipSummary />
+          <LeaveRequestForm />
         </div>
       )}
     </div>

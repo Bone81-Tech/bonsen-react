@@ -39,3 +39,4 @@ yarn-error.log*
 
 # Console communication file
 console.txt
+commit.txt
