@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import LocationStatus from '@/components/LocationStatus';
-import LiveMap from '@/components/LiveMap';
+
 import EmployeeStats from '@/components/EmployeeStats';
 import AttendanceClock from '@/components/AttendanceClock';
 import CameraCapture from '@/components/CameraCapture';
@@ -107,7 +107,7 @@ export default function DashboardPage() {
               )
             ))}
           </div>
-          {/* <LiveMap /> */}
+          
           {/* <EmployeeStats /> */}
         </div>
       ) : (
