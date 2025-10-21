@@ -77,7 +77,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, selectedRole, onBack }) 
           </button>
           <div className="flex-grow text-center">
             <Clock className="mx-auto h-12 w-12 text-blue-600 mb-2" />
-            <h1 className="text-xl md:text-4xl font-extrabold text-blue-600">BONE-SEN-REACT</h1>
+            <h1 className="text-xl md:text-3xl font-extrabold text-blue-600 whitespace-nowrap">BONE-SEN-REACT</h1>
           </div>
           <div className="w-10"></div> {/* Spacer */}
         </div>
